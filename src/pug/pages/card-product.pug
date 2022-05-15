@@ -1,0 +1,287 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="./css/shared.css")
+        link(rel="stylesheet" href="./css/header-&-footer.css")
+        link(rel="stylesheet" href="./css/card-product.css")
+
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;700&display=swap" rel="stylesheet")
+
+
+
+
+
+        title YANKI-card-product
+    body 
+        header 
+            .header__container.container
+                .box
+                    button.menu 
+                        img(src="./img/header/menu-catalog.svg" alt="menu")
+                    .text
+                        a(href="#") NEW
+                        a(href="catalog.html") КАТАЛОГ
+                        a(href="#") О НАС
+                    .logo
+                        a(href="index.html") 
+                            img(src="./img/header/logo-catalog.svg" alt="logo")
+                    .language 
+                        button.ru RU
+                        button.uah UAH
+                    .icons
+                        a(href="#")  
+                            img(src="./img/header/search-catalog.svg" alt="search")  
+                        a(href="#") 
+                            img(src="./img/header/profile-catalog.svg" alt="profile")  
+                        a(href="#") 
+                            img(src="./img/header/like-catalog.svg" alt="like")  
+                        a(href="#") 
+                            img(src="./img/header/basket-catalog.svg" alt="basket") 
+        section.links 
+            .links__container.container
+                a(href="./index.html")
+                    p Главная
+                img(src="./img/catalog/right.svg" alt="right")
+                a(href="catalog.html") Каталог 
+                img(src="./img/catalog/right.svg" alt="right")
+                a(href="#") Пальто
+                img(src="./img/catalog/right.svg" alt="right")
+                p Кремовое пальто
+        section.card-product
+            .card-product__container.container 
+                .card__content
+                    .content__image.content 
+                        .small__image 
+                            .image-1.img 
+                                img(src="./img/card-product/img-1.jpg" alt="img")
+                            .image-2.img 
+                                img(src="./img/card-product/img-2.jpg" alt="img")
+                            .image-3.img 
+                                img(src="./img/card-product/img-3.jpg" alt="img")
+                            .image-4.img 
+                                img(src="./img/card-product/img-4.jpg" alt="img")
+                            .image-5.img 
+                                img(src="./img/card-product/img-5.jpg" alt="img")
+                        .big__image
+                            img(src="./img/card-product/big-img.jpg" alt="bi-img")
+                    .content__text
+                        h2.title Кремовое пальто
+                        p.price 3150 грн
+                        .color-box 
+                            .clr.white 
+                            .clr.blue 
+                            .clr.yellow
+                        h3.name-color Цвет: Кофе с молоком меланж
+                        .size 
+                            select(name="size")
+                                option(value="title") Выберите размер 
+                                option(value="white") Белый 
+                                option(value="blue") Голубой  
+                                option(value="coffee-with-milk") Кофе с молоком меланж
+                        .button__box 
+                            button.basket В КОРЗИНУ
+                            button.favorites
+                                img(src="./img/card-product/favorites.svg" alt="")
+                                p В ИЗБРАННОЕ
+                        h4 Подробности
+                        .measurements__box 
+                            p Обмеры и описание
+                            img(src="./img/card-product/down.svg" alt="")
+                        .compound
+                            p.title Состав и уход
+                            img(src="./img/card-product/up.svg" alt="")
+                        .text-1.txt
+                            p Состав: 50% Шерсть, 50% Полиэстер
+                            p Подкладка: 100% Полиэстер
+                            p Утеплитель: 90% Пух, 10% Перо
+                        .text-2.txt 
+                            p - Не стирать
+                            p - Гладить при температуре утюга до 110°C
+                            p - Не отбеливать
+                            p - Сухая чистка (химчистка)
+                            p - Барабанная сушка запрещена
+        section.image
+            .image__container.container 
+                h3 Весь образ
+                .images-item 
+                    .item 
+                        a.icon(href="card-product.html") 
+                            img.photo(src="./img/catalog/item-1.jpg" alt="icon")
+                            img.like(src="./img/catalog/favorites.svg" alt="fav")
+                        h3.name Белая куртка new
+                        h4.price 2900 грн
+                        h4.size XXS XS S M L
+                        .color-box 
+                            .clr.white 
+                            .clr.blue 
+                            .clr.yellow
+                    .item 
+                        a.icon(href="card-product.html") 
+                            img.photo(src="./img/catalog/item-2.jpg" alt="icon")
+                            img.like(src="./img/catalog/favorites.svg" alt="fav")
+                        h3.name Белая куртка new
+                        h4.price 3150 грн
+                        h4.size XS M L
+                        .color-box 
+                            .clr.white 
+                            .clr.blue 
+                            .clr.yellow
+        section.additional-image
+            .additional-image__container.container
+                h3 Дополните образ
+                .images-item 
+                    .item 
+                        a.icon(href="card-product.html") 
+                            img.photo(src="./img/catalog/item-1.jpg" alt="icon")
+                            img.like(src="./img/catalog/favorites.svg" alt="fav")
+                        h3.name Белая куртка new
+                        h4.price 2900 грн
+                        h4.size XXS XS S M L
+                        .color-box 
+                            .clr.white 
+                            .clr.blue 
+                            .clr.yellow
+                    .item 
+                        a.icon(href="card-product.html") 
+                            img.photo(src="./img/catalog/item-2.jpg" alt="icon")
+                            img.like(src="./img/catalog/favorites.svg" alt="fav")
+                        h3.name Белая куртка new
+                        h4.price 3150 грн
+                        h4.size XS M L
+                        .color-box 
+                            .clr.white 
+                            .clr.blue 
+                            .clr.yellow
+                    .item 
+                        a.icon(href="card-product.html") 
+                            img.photo(src="./img/catalog/item-2.jpg" alt="icon")
+                            img.like(src="./img/catalog/favorites.svg" alt="fav")
+                        h3.name Белая куртка new
+                        h4.price 3150 грн
+                        h4.size XS M L
+                        .color-box 
+                            .clr.white 
+                            .clr.blue 
+                            .clr.yellow
+                    .item 
+                        a.icon(href="card-product.html") 
+                            img.photo(src="./img/catalog/item-2.jpg" alt="icon")
+                            img.like(src="./img/catalog/favorites.svg" alt="fav")
+                        h3.name Белая куртка new
+                        h4.price 3150 грн
+                        h4.size XS M L
+                        .color-box 
+                            .clr.white 
+                            .clr.blue 
+                            .clr.yellow
+                h3 Вам может понравиться
+                .images-item 
+                    .item 
+                        a.icon(href="card-product.html") 
+                            img.photo(src="./img/catalog/item-1.jpg" alt="icon")
+                            img.like(src="./img/catalog/favorites.svg" alt="fav")
+                        h3.name Белая куртка new
+                        h4.price 2900 грн
+                        h4.size XXS XS S M L
+                        .color-box 
+                            .clr.white 
+                            .clr.blue 
+                            .clr.yellow
+                    .item 
+                        a.icon(href="card-product.html") 
+                            img.photo(src="./img/catalog/item-2.jpg" alt="icon")
+                            img.like(src="./img/catalog/favorites.svg" alt="fav")
+                        h3.name Белая куртка new
+                        h4.price 3150 грн
+                        h4.size XS M L
+                        .color-box 
+                            .clr.white 
+                            .clr.blue 
+                            .clr.yellow
+                    .item 
+                        a.icon(href="card-product.html") 
+                            img.photo(src="./img/catalog/item-2.jpg" alt="icon")
+                            img.like(src="./img/catalog/favorites.svg" alt="fav")
+                        h3.name Белая куртка new
+                        h4.price 3150 грн
+                        h4.size XS M L
+                        .color-box 
+                            .clr.white 
+                            .clr.blue 
+                            .clr.yellow
+                    .item 
+                        a.icon(href="card-product.html") 
+                            img.photo(src="./img/catalog/item-2.jpg" alt="icon")
+                            img.like(src="./img/catalog/favorites.svg" alt="fav")
+                        h3.name Белая куртка new
+                        h4.price 3150 грн
+                        h4.size XS M L
+                        .color-box 
+                            .clr.white 
+                            .clr.blue 
+                            .clr.yellow
+                h3 Вы недавно смотрели
+                .watched
+                    .item 
+                        a.icon(href="card-product.html") 
+                            img.photo(src="./img/catalog/item-1.jpg" alt="icon")
+                            img.like(src="./img/catalog/favorites.svg" alt="fav")
+                        h3.name Белая куртка new
+                        h4.price 2900 грн
+                        h4.size XXS XS S M L
+                        .color-box 
+                            .clr.white 
+                            .clr.blue 
+                            .clr.yellow
+                    .item 
+                        a.icon(href="card-product.html") 
+                            img.photo(src="./img/catalog/item-2.jpg" alt="icon")
+                            img.like(src="./img/catalog/favorites.svg" alt="fav")
+                        h3.name Белая куртка new
+                        h4.price 3150 грн
+                        h4.size XS M L
+                        .color-box 
+                            .clr.white 
+                            .clr.blue 
+                            .clr.yellow
+        footer  
+            .footer__container.container 
+                .item 
+                    h4 КОМПАНИЯ
+                    .link__box 
+                        a(href="#") О нас
+                        a(href="#") Контакты
+                .item 
+                    h4 ПОЛЕЗНОЕ
+                    .link__box 
+                        a(href="#") Оплата и доставка
+                        a(href="#") Условия возврата
+                        a(href="#") Бонусная система
+                .item 
+                    h4 ПОКУПАТЕЛЮ
+                    .link__box 
+                        a(href="#") Избранное
+                        a(href="#") Публичная оферта
+                        a(href="#") Политика конфиденциальности
+                .item 
+                    h4 КОНТАКТЫ
+                    .link__box
+                        .social 
+                            a(href="#")
+                                img(src="./img/footer/instagram.svg" alt="social") 
+                            a(href="#") 
+                                img(src="./img/footer/twitter.svg" alt="social") 
+                        a(href="#") +38(073) 096 36 44
+                        a(href="#") info@yanki.com
+        section.basement 
+            h5 ©️ 2021 Yanki. All rights reserved
+
+
+
+
+

@@ -1,0 +1,40 @@
+.exchange .exchange__container .title {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 20px;
+}
+.exchange .exchange__container .subtitle {
+  font-weight: 300;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.exchange .exchange__container .text {
+  font-weight: 300;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.exchange .exchange__container .conditions {
+  width: 100%;
+  margin-bottom: 270px;
+  display: flex;
+  justify-content: space-between;
+}
+.exchange .exchange__container .conditions .item {
+  width: 16%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.exchange .exchange__container .conditions .item .icon {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+.exchange .exchange__container .conditions .item .icon img {
+  width: 100%;
+  height: 100%;
+}
+.exchange .exchange__container .conditions .item h4 {
+  text-align: center;
+}

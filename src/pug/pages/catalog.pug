@@ -1,0 +1,243 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/shared.css")
+        link(rel="stylesheet", href="./css/header-&-footer.css")
+        link(rel="stylesheet", href="./css/catalog.css")
+
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;700&display=swap" rel="stylesheet")
+        
+        title YANKI-catalog
+    body 
+        header 
+            .header__container.container
+                .box
+                    button.menu 
+                        img(src="./img/header/menu-catalog.svg", alt="menu")
+                    .text
+                        a(href="#") NEW
+                        a(href="#") КАТАЛОГ
+                        a(href="#") О НАС
+                    .logo
+                        a(href="#") 
+                            img(src="./img/header/logo-catalog.svg", alt="logo")
+                    .language 
+                        button.ru RU
+                        button.uah UAH
+                    .icons
+                        a(href="#")  
+                            img(src="./img/header/search-catalog.svg", alt="search")  
+                        a(href="#") 
+                            img(src="./img/header/profile-catalog.svg", alt="profile")  
+                        a(href="#") 
+                            img(src="./img/header/like-catalog.svg", alt="like")  
+                        a(href="#") 
+                            img(src="./img/header/basket-catalog.svg", alt="basket") 
+        section.links 
+            .links__container.container
+                a(href="#")
+                    p Главная
+                img(src="./img/catalog/right.svg", alt="right")
+                a(href="#")
+                    p Каталог
+        section.catalog
+            .catalog__container.container
+                .range-links
+                    h2.title Каталог
+                    .block__link 
+                        a(href="#") New
+                        a(href="#") Bestsellers  
+                        a(href="#") Верхняя одежда 
+                        a(href="#") Шубы 
+                        a(href="#") Тренчи 
+                        a(href="#") Пальто 
+                        a(href="#") Пуховики и жилеты
+                        a(href="#") Костюмы 
+                        a(href="#") Жакеты 
+                        a(href="#") Платья 
+                        a(href="#") Рубашки и блузы 
+                        a(href="#") Юбки 
+                        a(href="#") Футболки и топы 
+                        a(href="#") Аксессуары 
+                        a(href="#") Sale 
+                        a(href="#") Summer 
+                        a(href="#") Посмотреть всё 
+                .range-images
+                    .options 
+                        button Размер
+                            img(src="./img/catalog/down.svg", alt="down")
+                        button Цвет
+                            img(src="./img/catalog/down.svg", alt="down")
+                        button Цена
+                            img(src="./img/catalog/down.svg", alt="down")
+                        button Сортировать по
+                            img(src="./img/catalog/down.svg", alt="down")
+                    .images-item 
+                        .item 
+                            a.icon(href="card-product.html") 
+                                img.photo(src="./img/catalog/item-1.jpg", alt="icon")
+                                img.like(src="./img/catalog/favorites.svg", alt="fav")
+                            h3.name Белая куртка new
+                            h4.price 2900 грн
+                            h4.size XXS XS S M L
+                            .color-box 
+                                .clr.white 
+                                .clr.blue 
+                                .clr.yellow
+                        .item 
+                            .icon 
+                                img.photo(src="./img/catalog/item-2.jpg", alt="icon")
+                                img.like(src="./img/catalog/favorites.svg", alt="fav")
+                            h3.name Синее пальто
+                            h4.price 3150 грн
+                            h4.size XS M L
+                            .color-box 
+                                .clr.white 
+                                .clr.blue 
+                                .clr.yellow
+                        .item 
+                            .icon 
+                                img.photo(src="./img/catalog/item-3.jpg", alt="icon")
+                                img.like(src="./img/catalog/favorites.svg", alt="fav")
+                            h3.name Бежевая шуба
+                            h4.price 4200 грн
+                            h4.size XS S L
+                            .color-box 
+                                .clr.white 
+                                .clr.blue 
+                                .clr.yellow
+                        .item 
+                            .icon 
+                                img.photo(src="./img/catalog/item-4.jpg", alt="icon")
+                                img.like(src="./img/catalog/favorites.svg", alt="fav")
+                            h3.name Синяя парка new
+                            h4.price 2900 грн
+                            h4.size XXS XS S M L
+                            .color-box 
+                                .clr.white 
+                                .clr.blue 
+                                .clr.yellow
+                        .item 
+                            .icon 
+                                img.photo(src="./img/catalog/item-5.jpg", alt="icon")
+                                img.like(src="./img/catalog/favorites.svg", alt="fav")
+                            h3.name Белая куртка new
+                            h4.price 2900 грн
+                            h4.size XXS XS S M L
+                            .color-box 
+                                .clr.white 
+                                .clr.blue 
+                                .clr.yellow
+                        .item 
+                            .icon 
+                                img.photo(src="./img/catalog/item-6.jpg", alt="icon")
+                                img.like(src="./img/catalog/favorites.svg", alt="fav")
+                            h3.name Синее пальто
+                            h4.price 3150 грн
+                            h4.size XS M L
+                            .color-box 
+                                .clr.white 
+                                .clr.blue 
+                                .clr.yellow
+                        .item 
+                            .icon 
+                                img.photo(src="./img/catalog/item-7.jpg", alt="icon")
+                                img.like(src="./img/catalog/favorites.svg", alt="fav")
+                            h3.name Белая куртка new
+                            h4.price 2900 грн
+                            h4.size XXS XS S M L
+                            .color-box 
+                                .clr.white 
+                                .clr.blue 
+                                .clr.yellow
+                        .item 
+                            .icon 
+                                img.photo(src="./img/catalog/item-8.jpg", alt="icon")
+                                img.like(src="./img/catalog/favorites.svg", alt="fav")
+                            h3.name Синее пальто
+                            h4.price 3150 грн
+                            h4.size XS M L
+                            .color-box 
+                                .clr.white 
+                                .clr.blue 
+                                .clr.yellow
+                        .item 
+                            .icon 
+                                img.photo(src="./img/catalog/item-9.jpg", alt="icon")
+                                img.like(src="./img/catalog/favorites.svg", alt="fav")
+                            h3.name Бежевая шуба
+                            h4.price 4200 грн
+                            h4.size XS S L
+                            .color-box 
+                                .clr.white 
+                                .clr.blue 
+                                .clr.yellow
+                        .item 
+                            .icon 
+                                img.photo(src="./img/catalog/item-10.jpg", alt="icon")
+                                img.like(src="./img/catalog/favorites.svg", alt="fav")
+                            h3.name Синяя парка
+                            h4.price 2900 грн
+                            h4.size XXS XS S M L
+                            .color-box 
+                                .clr.white 
+                                .clr.blue 
+                                .clr.yellow
+                        .item 
+                            .icon 
+                                img.photo(src="./img/catalog/item-11.jpg", alt="icon")
+                                img.like(src="./img/catalog/favorites.svg", alt="fav")
+                            h3.name Белая куртка new
+                            h4.price 2900 грн
+                            h4.size XXS XS S M L
+                            .color-box 
+                                .clr.white 
+                                .clr.blue 
+                                .clr.yellow
+                        .item 
+                            .icon 
+                                img.photo(src="./img/catalog/item-12.jpg", alt="icon")
+                                img.like(src="./img/catalog/favorites.svg", alt="fav")
+                            h3.name Синее пальто
+                            h4.price 3150 грн
+                            h4.size XS M L
+                            .color-box 
+                                .clr.white 
+                                .clr.blue 
+                                .clr.yellow 
+        footer  
+            .footer__container.container 
+                .item 
+                    h4 КОМПАНИЯ
+                    .link__box 
+                        a(href="#") О нас
+                        a(href="#") Контакты
+                .item 
+                    h4 ПОЛЕЗНОЕ
+                    .link__box 
+                        a(href="#") Оплата и доставка
+                        a(href="#") Условия возврата
+                        a(href="#") Бонусная система
+                .item 
+                    h4 ПОКУПАТЕЛЮ
+                    .link__box 
+                        a(href="#") Избранное
+                        a(href="#") Публичная оферта
+                        a(href="#") Политика конфиденциальности
+                .item 
+                    h4 КОНТАКТЫ
+                    .link__box
+                        .social 
+                            a(href="#")
+                                img(src="./img/footer/instagram.svg", alt="social") 
+                            a(href="#") 
+                                img(src="./img/footer/twitter.svg", alt="social") 
+                        a(href="#") +38(073) 096 36 44
+                        a(href="#") info@yanki.com
+        section.basement 
+            h5 ©️ 2021 Yanki. All rights reserved

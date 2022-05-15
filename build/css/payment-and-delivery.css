@@ -1,0 +1,59 @@
+.payment .payment__container .title {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 20px;
+}
+.payment .payment__container .box__payment-delivery {
+  display: flex;
+  margin-bottom: 20px;
+}
+.payment .payment__container .box__payment-delivery .item-box p {
+  font-weight: 300;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.payment .payment__container .box__payment-delivery .item-box ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.payment .payment__container .box__payment-delivery .item-box ul li {
+  font-weight: 300;
+  line-height: 20px;
+}
+.payment .payment__container .box__payment-delivery .box-1 {
+  width: 66%;
+}
+.payment .payment__container .box__payment-delivery .box-2 {
+  width: 50%;
+}
+.payment .payment__container .process {
+  font-weight: 300;
+  line-height: 20px;
+  margin-bottom: 25px;
+}
+.payment .payment__container .process__box {
+  display: flex;
+  justify-content: space-between;
+}
+.payment .payment__container .process__box .item__box {
+  display: flex;
+  align-items: center;
+}
+.payment .payment__container .process__box .item__box .icon {
+  margin-right: 15px;
+}
+.payment .payment__container .process__box .item__box h4 {
+  font-weight: 300;
+  line-height: 20px;
+}
+.payment .payment__container .process__box .item-1 {
+  width: 267px;
+}
+.payment .payment__container .process__box .item-2 {
+  width: 206px;
+}
+.payment .payment__container .process__box .item-3 {
+  width: 480px;
+}
