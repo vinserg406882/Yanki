@@ -1,3 +1,6 @@
+block header
+    include ../components/catalog-header.pug
+
 doctype html
 html(lang="en")
     head
@@ -12,36 +15,10 @@ html(lang="en")
         link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
         link(href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;700&display=swap" rel="stylesheet")
 
-
-
-
-
         title YANKI-card-product
     body 
-        header 
-            .header__container.container
-                .box
-                    button.menu 
-                        img(src="./img/header/menu-catalog.svg" alt="menu")
-                    .text
-                        a(href="#") NEW
-                        a(href="catalog.html") КАТАЛОГ
-                        a(href="#") О НАС
-                    .logo
-                        a(href="index.html") 
-                            img(src="./img/header/logo-catalog.svg" alt="logo")
-                    .language 
-                        button.ru RU
-                        button.uah UAH
-                    .icons
-                        a(href="#")  
-                            img(src="./img/header/search-catalog.svg" alt="search")  
-                        a(href="#") 
-                            img(src="./img/header/profile-catalog.svg" alt="profile")  
-                        a(href="#") 
-                            img(src="./img/header/like-catalog.svg" alt="like")  
-                        a(href="#") 
-                            img(src="./img/header/basket-catalog.svg" alt="basket") 
+        
+        block header
         section.links 
             .links__container.container
                 a(href="./index.html")
