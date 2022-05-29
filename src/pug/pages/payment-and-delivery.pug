@@ -1,6 +1,3 @@
-block header
-    include ../components/catalog-header.pug
-
 doctype html
 html(lang="en")
     head
@@ -18,6 +15,7 @@ html(lang="en")
         title YANKI-payment-and-delivery
     body 
         block header
+            include ../components/catalog-header.pug
         section.links 
             .links__container.container
                 a(href="./index.html")
