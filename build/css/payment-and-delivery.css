@@ -1,3 +1,11 @@
+.payment {
+  margin-bottom: 279px;
+}
+@media (max-width: 800px) {
+  .payment {
+    margin-bottom: 80px;
+  }
+}
 .payment .payment__container .title {
   font-weight: 300;
   font-size: 20px;
@@ -7,6 +15,11 @@
 .payment .payment__container .box__payment-delivery {
   display: flex;
   margin-bottom: 20px;
+}
+@media (max-width: 700px) {
+  .payment .payment__container .box__payment-delivery {
+    flex-direction: column;
+  }
 }
 .payment .payment__container .box__payment-delivery .item-box p {
   font-weight: 300;
@@ -25,8 +38,19 @@
 .payment .payment__container .box__payment-delivery .box-1 {
   width: 66%;
 }
+@media (max-width: 700px) {
+  .payment .payment__container .box__payment-delivery .box-1 {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
 .payment .payment__container .box__payment-delivery .box-2 {
   width: 50%;
+}
+@media (max-width: 700px) {
+  .payment .payment__container .box__payment-delivery .box-2 {
+    width: 100%;
+  }
 }
 .payment .payment__container .process {
   font-weight: 300;
@@ -36,6 +60,12 @@
 .payment .payment__container .process__box {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 800px) {
+  .payment .payment__container .process__box {
+    flex-direction: column;
+    gap: 15px;
+  }
 }
 .payment .payment__container .process__box .item__box {
   display: flex;
@@ -51,9 +81,24 @@
 .payment .payment__container .process__box .item-1 {
   width: 267px;
 }
+@media (max-width: 800px) {
+  .payment .payment__container .process__box .item-1 {
+    width: 100%;
+  }
+}
 .payment .payment__container .process__box .item-2 {
   width: 206px;
 }
+@media (max-width: 800px) {
+  .payment .payment__container .process__box .item-2 {
+    width: 100%;
+  }
+}
 .payment .payment__container .process__box .item-3 {
   width: 480px;
+}
+@media (max-width: 800px) {
+  .payment .payment__container .process__box .item-3 {
+    width: 100%;
+  }
 }

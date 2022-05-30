@@ -4,6 +4,10 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: 100px;
+            @media (max-width: 900px) {
+                flex-direction: column;
+                align-items: center;
+            }
             .content  {
 
             }
@@ -11,13 +15,22 @@
                 display: flex;
                 gap: 10px;
                 width: 49%;
+                @media (max-width: 900px) {
+                    width: 100%;
+                    flex-direction: column-reverse;
+                    align-items: center;
+                }
                 .small__image {
                     display: flex;
                     flex-direction: column;
                     gap: 10px;
+                    @media (max-width: 900px) {
+                        flex-direction: unset;
+                        width: 100%;
+                        justify-content: center;
+                    }
                     .img {
                         width: 100px;
-                        height: 100px;
                         img {
                             width: 100%;
                             height: 100%;
@@ -42,30 +55,48 @@
                 .big__image {
                     width: 450px;
                     height: 540px;
+                    display: flex;
+                    align-items: flex-start;
+                    @media (max-width: 900px) {
+                        width: 100%;
+                        height: unset;
+                    }
                     img {
                         width: 100%;
-                        height: 100%;
+                        
                     }
                 }
                 
             }
             .content__text {
                 width: 49%;
+                @media (max-width: 900px) {
+                    width: 100%;
+                }
                 .title {
                     font-weight: 300;
                     font-size: 20px;
                     line-height: 23px;
                     margin-bottom: 20px;
+                    @media (max-width: 900px) {
+                        text-align: center;
+                    }
                 }
                 .price {
                     font-weight: 700;
                     line-height: 19px;
                     margin-bottom: 24px;
+                    @media (max-width: 900px) {
+                        text-align: center;
+                    }
                 }
                 .color-box {
                     display: flex;
                     gap: 5px;
                     margin-bottom: 14px;
+                    @media (max-width: 900px) {
+                        justify-content: center;
+                    }
                     .clr {
                         width: 21px;
                         height: 21px;
@@ -259,11 +290,20 @@
             display: flex;
             margin-bottom: 70px;
             gap: 15px;
+            @media (max-width: 900px) {
+                flex-wrap: wrap;
+            }
             .item {
                 width: 24%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                @media (max-width: 900px) {
+                    width: 49%;
+                }
+                @media (max-width: 800px) {
+                    width: 48%;
+                }
                 .icon {
                     margin-bottom: 15px;
                     width: 100%;
