@@ -14,30 +14,8 @@ html(lang="en")
         
         title YANKI-catalog
     body 
-        header 
-            .header__container.container
-                .box
-                    button.menu 
-                        img(src="./img/header/menu-catalog.svg", alt="menu")
-                    .text
-                        a(href="#") NEW
-                        a(href="#") КАТАЛОГ
-                        a(href="#") О НАС
-                    .logo
-                        a(href="#") 
-                            img(src="./img/header/logo-catalog.svg", alt="logo")
-                    .language 
-                        button.ru RU
-                        button.uah UAH
-                    .icons
-                        a(href="#")  
-                            img(src="./img/header/search-catalog.svg", alt="search")  
-                        a(href="#") 
-                            img(src="./img/header/profile-catalog.svg", alt="profile")  
-                        a(href="#") 
-                            img(src="./img/header/like-catalog.svg", alt="like")  
-                        a(href="#") 
-                            img(src="./img/header/basket-catalog.svg", alt="basket") 
+        block header
+            include ../components/catalog-header.pug
         section.links 
             .links__container.container
                 a(href="#")

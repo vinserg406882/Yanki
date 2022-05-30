@@ -11,37 +11,11 @@ html(lang="en")
         link(rel="preconnect" href="https://fonts.googleapis.com")
         link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
         link(href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;700&display=swap" rel="stylesheet")
-
-
-
-
-
+        
         title YANKI-card-product
     body 
-        header 
-            .header__container.container
-                .box
-                    button.menu 
-                        img(src="./img/header/menu-catalog.svg" alt="menu")
-                    .text
-                        a(href="#") NEW
-                        a(href="catalog.html") КАТАЛОГ
-                        a(href="#") О НАС
-                    .logo
-                        a(href="index.html") 
-                            img(src="./img/header/logo-catalog.svg" alt="logo")
-                    .language 
-                        button.ru RU
-                        button.uah UAH
-                    .icons
-                        a(href="#")  
-                            img(src="./img/header/search-catalog.svg" alt="search")  
-                        a(href="#") 
-                            img(src="./img/header/profile-catalog.svg" alt="profile")  
-                        a(href="#") 
-                            img(src="./img/header/like-catalog.svg" alt="like")  
-                        a(href="#") 
-                            img(src="./img/header/basket-catalog.svg" alt="basket") 
+        block header
+            include ../components/catalog-header.pug
         section.links 
             .links__container.container
                 a(href="./index.html")
@@ -89,22 +63,25 @@ html(lang="en")
                                 img(src="./img/card-product/favorites.svg" alt="")
                                 p В ИЗБРАННОЕ
                         h4 Подробности
-                        .measurements__box 
-                            p Обмеры и описание
-                            img(src="./img/card-product/down.svg" alt="")
-                        .compound
-                            p.title Состав и уход
-                            img(src="./img/card-product/up.svg" alt="")
-                        .text-1.txt
-                            p Состав: 50% Шерсть, 50% Полиэстер
-                            p Подкладка: 100% Полиэстер
-                            p Утеплитель: 90% Пух, 10% Перо
-                        .text-2.txt 
-                            p - Не стирать
-                            p - Гладить при температуре утюга до 110°C
-                            p - Не отбеливать
-                            p - Сухая чистка (химчистка)
-                            p - Барабанная сушка запрещена
+                        div 
+                        block expand
+                            include ../components/expand-panel.pug
+                        //- .measurements__box 
+                        //-     p Обмеры и описание
+                        //-     img(src="./img/card-product/down.svg" alt="")
+                        //- .compound
+                        //-     p.title Состав и уход
+                        //-     img(src="./img/card-product/up.svg" alt="")
+                        //- .text-1.txt
+                        //-     p Состав: 50% Шерсть, 50% Полиэстер
+                        //-     p Подкладка: 100% Полиэстер
+                        //-     p Утеплитель: 90% Пух, 10% Перо
+                        //- .text-2.txt 
+                        //-     p - Не стирать
+                        //-     p - Гладить при температуре утюга до 110°C
+                        //-     p - Не отбеливать
+                        //-     p - Сухая чистка (химчистка)
+                        //-     p - Барабанная сушка запрещена
         section.image
             .image__container.container 
                 h3 Весь образ
