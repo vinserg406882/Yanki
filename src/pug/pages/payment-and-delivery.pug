@@ -2,47 +2,49 @@ doctype html
 html(lang="en")
     head
         meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        link(rel="stylesheet", href="./css/shared.css")
-        link(rel="stylesheet", href="./css/header-&-footer.css")
-        link(rel="stylesheet", href="./css/payment-and-delivery.css")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="./css/shared.css")
+        link(rel="stylesheet" href="./css/header-&-footer.css")
+        link(rel="stylesheet" href="./css/payment-and-delivery.css")
 
         link(rel="preconnect" href="https://fonts.googleapis.com")
         link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
         link(href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;700&display=swap" rel="stylesheet")
-        
+
         title YANKI-payment-and-delivery
     body 
         header 
             .header__container.container
                 .box
                     button.menu 
-                        img(src="./img/header/menu-catalog.svg", alt="menu")
+                        img(src="./img/header/menu-catalog.svg" alt="menu")
                     .text
                         a(href="#") NEW
                         a(href="#") КАТАЛОГ
                         a(href="#") О НАС
+                    .language.lng-2 
+                        button.ru RU
                     .logo
                         a(href="#") 
-                            img(src="./img/header/logo-catalog.svg", alt="logo")
-                    .language 
+                            img(src="./img/header/logo-catalog.svg" alt="logo")
+                    .language.lng-1 
                         button.ru RU
                         button.uah UAH
                     .icons
-                        a(href="#")  
-                            img(src="./img/header/search-catalog.svg", alt="search")  
+                        a.close(href="#")  
+                            img(src="./img/header/search-catalog.svg" alt="search")  
+                        a.close(href="#") 
+                            img(src="./img/header/profile-catalog.svg" alt="profile")  
                         a(href="#") 
-                            img(src="./img/header/profile-catalog.svg", alt="profile")  
+                            img(src="./img/header/like-catalog.svg" alt="like")  
                         a(href="#") 
-                            img(src="./img/header/like-catalog.svg", alt="like")  
-                        a(href="#") 
-                            img(src="./img/header/basket-catalog.svg", alt="basket") 
+                            img(src="./img/header/basket-catalog.svg" alt="basket") 
         section.links 
             .links__container.container
                 a(href="./index.html")
                     p Главная
-                img(src="./img/catalog/right.svg", alt="right")
+                img(src="./img/catalog/right.svg" alt="right")
                 p Оплата и доставка
         section.payment 
             .payment__container.container 
@@ -64,13 +66,44 @@ html(lang="en")
                 .process__box 
                     .item__box.item-1 
                         .icon 
-                            img(src="./img/payment-and-delivery/icon-1.svg", alt="icon")
+                            img(src="./img/payment-and-delivery/icon-1.svg" alt="icon")
                         h4 Выбрать в корзине способ оплаты "LIQPAY";
                     .item__box.item-2 
                         .icon 
-                            img(src="./img/payment-and-delivery/icon-2.svg", alt="icon")
+                            img(src="./img/payment-and-delivery/icon-2.svg" alt="icon")
                         h4 Подтвердить заказ;
                     .item__box.item-3 
                         .icon 
-                            img(src="./img/payment-and-delivery/icon-3.svg", alt="icon")
-                        h4 После этого Вас перенаправит на сайт LIQPAY, где вы выбираете удобный для вас способ оплаты: через Приват24, или с помощью карты Mastercard/VISA со всего мира. 
+                            img(src="./img/payment-and-delivery/icon-3.svg" alt="icon")
+                        h4 После этого Вас перенаправит на сайт LIQPAY, где вы выбираете удобный для вас способ оплаты: через Приват24, или с помощью карты Mastercard/VISA со всего мира.
+        footer  
+            .footer__container.container 
+                .item 
+                    h4 КОМПАНИЯ
+                    .link__box 
+                        a(href="#") О нас
+                        a(href="#") Контакты
+                .item 
+                    h4 ПОЛЕЗНОЕ
+                    .link__box 
+                        a(href="./payment-and-delivery.html") Оплата и доставка
+                        a(href="./exchange-and-return.html") Условия возврата
+                        a(href="#") Бонусная система
+                .item 
+                    h4 ПОКУПАТЕЛЮ
+                    .link__box 
+                        a(href="#") Избранное
+                        a(href="#") Публичная оферта
+                        a(href="#") Политика конфиденциальности
+                .item 
+                    h4 КОНТАКТЫ
+                    .link__box
+                        .social 
+                            a(href="#")
+                                img(src="./img/footer/instagram.svg" alt="social") 
+                            a(href="#") 
+                                img(src="./img/footer/twitter.svg" alt="social") 
+                        a(href="#") +38(073) 096 36 44
+                        a(href="#") info@yanki.com
+        section.basement 
+            h5 ©️ 2021 Yanki. All rights reserved

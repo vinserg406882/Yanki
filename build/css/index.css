@@ -24,11 +24,46 @@ header .header__container .box .text {
   align-items: center;
   gap: 26px;
 }
+@media (max-width: 900px) {
+  header .header__container .box .text {
+    gap: 15px;
+  }
+}
+@media (max-width: 800px) {
+  header .header__container .box .text {
+    gap: 10px;
+  }
+}
 header .header__container .box .text a {
   font-weight: 300;
   font-size: 18px;
   line-height: 21px;
   color: #fff;
+}
+@media (max-width: 700px) {
+  header .header__container .box .text {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  header .header__container .box .logo {
+    margin-right: 75px;
+  }
+}
+@media (max-width: 600px) {
+  header .header__container .box .logo {
+    margin-right: 50px;
+  }
+}
+@media (max-width: 500px) {
+  header .header__container .box .logo {
+    margin-right: 25px;
+  }
+}
+@media (max-width: 400px) {
+  header .header__container .box .logo {
+    margin-right: 10px;
+  }
 }
 header .header__container .box .logo img {
   width: 100%;
@@ -39,12 +74,28 @@ header .header__container .box .language {
   align-items: center;
   gap: 24px;
 }
+@media (max-width: 900px) {
+  header .header__container .box .language {
+    gap: 15px;
+  }
+}
+@media (max-width: 800px) {
+  header .header__container .box .language {
+    gap: 10px;
+  }
+}
 header .header__container .box .language .ru {
   background: none;
   font-weight: 300;
   font-size: 18px;
   line-height: 21px;
   color: #fff;
+}
+@media (max-width: 700px) {
+  header .header__container .box .language .ru {
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 header .header__container .box .language .uah {
   background: none;
@@ -53,10 +104,38 @@ header .header__container .box .language .uah {
   line-height: 21px;
   color: #fff;
 }
+@media (max-width: 700px) {
+  header .header__container .box .lng-1 {
+    display: none;
+  }
+}
+header .header__container .box .lng-2 {
+  display: none;
+}
+@media (max-width: 700px) {
+  header .header__container .box .lng-2 {
+    display: block;
+  }
+}
 header .header__container .box .icons {
   display: flex;
   align-items: center;
   gap: 30px;
+}
+@media (max-width: 900px) {
+  header .header__container .box .icons {
+    gap: 20px;
+  }
+}
+@media (max-width: 800px) {
+  header .header__container .box .icons {
+    gap: 15px;
+  }
+}
+@media (max-width: 700px) {
+  header .header__container .box .close {
+    display: none;
+  }
 }
 
 main {
@@ -64,6 +143,11 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+@media (max-width: 700px) {
+  main {
+    background-image: url(../img/main/photo-1.jpg);
+  }
 }
 main .main__box {
   display: flex;
@@ -94,6 +178,13 @@ main .main__box .content .title {
   color: #fff;
   margin-bottom: 20px;
 }
+@media (max-width: 400px) {
+  main .main__box .content .title {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
 main .main__box .content .border {
   border-top: 1px solid #fff;
   width: 120px;
@@ -105,6 +196,13 @@ main .main__box .content .subtitle {
   text-transform: uppercase;
   color: #fff;
 }
+@media (max-width: 400px) {
+  main .main__box .content .subtitle {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
 main .main__box .bg-3 {
   background-image: url(../img/main/photo-3.jpg);
 }
@@ -112,8 +210,18 @@ main .main__box .bg-3 {
 .categories {
   margin-bottom: 100px;
 }
+@media (max-width: 400px) {
+  .categories {
+    margin-bottom: 60px;
+  }
+}
 .categories .categories__container {
   padding-top: 100px;
+}
+@media (max-width: 400px) {
+  .categories .categories__container {
+    padding-top: 60px;
+  }
 }
 .categories .categories__container .title {
   margin-bottom: 50px;
@@ -121,19 +229,61 @@ main .main__box .bg-3 {
   font-size: 36px;
   line-height: 42px;
 }
+@media (max-width: 400px) {
+  .categories .categories__container .title {
+    margin-bottom: 30px;
+  }
+}
 .categories .categories__container .photo__box {
   height: 450px;
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 900px) {
+  .categories .categories__container .photo__box {
+    flex-wrap: wrap;
+    height: 1200px;
+    gap: 15px;
+  }
+}
+@media (max-width: 800px) {
+  .categories .categories__container .photo__box {
+    gap: 25px;
+  }
+}
+@media (max-width: 700px) {
+  .categories .categories__container .photo__box {
+    height: 3900px;
+  }
+}
+@media (max-width: 700px) {
+  .categories .categories__container .photo__box {
+    height: 1900px;
+  }
+}
 .categories .categories__container .photo__box .box__item {
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+  background-position: center;
   width: 24%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+}
+@media (max-width: 900px) {
+  .categories .categories__container .photo__box .box__item {
+    width: 49%;
+  }
+}
+@media (max-width: 800px) {
+  .categories .categories__container .photo__box .box__item {
+    width: 48%;
+  }
+}
+@media (max-width: 700px) {
+  .categories .categories__container .photo__box .box__item {
+    width: 100%;
+  }
 }
 .categories .categories__container .photo__box .box__item .name {
   font-weight: 300;
@@ -165,6 +315,7 @@ main .main__box .bg-3 {
 .subscription .subscription__container {
   max-width: 600px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 .subscription .subscription__container h3 {
   font-weight: 300;
@@ -207,9 +358,37 @@ footer .footer__container {
   display: flex;
   gap: 85px;
 }
+@media (max-width: 900px) {
+  footer .footer__container {
+    gap: 35px;
+  }
+}
+@media (max-width: 800px) {
+  footer .footer__container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 600px) {
+  footer .footer__container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 footer .footer__container .item {
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 800px) {
+  footer .footer__container .item {
+    width: 30%;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  footer .footer__container .item {
+    width: 100%;
+  }
 }
 footer .footer__container .item h4 {
   font-weight: 300;
@@ -225,6 +404,11 @@ footer .footer__container .item .link__box {
 footer .footer__container .item .link__box .social {
   display: flex;
   gap: 12px;
+}
+@media (max-width: 600px) {
+  footer .footer__container .item .link__box .social {
+    justify-content: center;
+  }
 }
 footer .footer__container .item .link__box a {
   font-weight: 200;
